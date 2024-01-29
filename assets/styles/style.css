@@ -1,0 +1,20 @@
+body{
+    background: radial-gradient(circle, rgba(63,120,251,1) 0%, rgba(146,70,252,1) 100%);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
