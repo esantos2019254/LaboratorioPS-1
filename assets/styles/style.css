@@ -1,6 +1,9 @@
 body{
     background-image: url('../resource/img/fondo.jpg');
     height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
 }
 
 .container{
