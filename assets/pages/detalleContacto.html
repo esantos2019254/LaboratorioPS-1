@@ -1,50 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Contactos</title>
+    <link rel="stylesheet" href="../styles/detalleContactoStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Detalle Contacto</title>
 </head>
+
 <body>
+    <div class="container">
+        <div class="table">
+            <div id="detailsContainer">
 
-    <h1>Lista de Contactos</h1>
-
-    <table id="contactTable">
-        <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Email</th>
-                <th>Detalles</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>John Doe</td>
-                <td>john.doe@example.com</td>
-                <td><button onclick="showDetails('John Doe', 'john.doe@example.com')">Ver Detalles</button></td>
-            </tr>
-            <!-- Agrega más filas según tus contactos -->
-        </tbody>
-    </table>
-
-    <div id="detailsContainer">
-        <!-- Aquí se mostrarán los detalles del contacto seleccionado -->
+            </div>
+        </div>
     </div>
-
-    <script>
-        // Función para mostrar detalles del contacto
-        function showDetails(name, email) {
-            const detailsContainer = document.getElementById('detailsContainer');
-            // Construye el HTML de los detalles
-            const detailsHTML = `
-                <h2>Detalles del Contacto</h2>
-                <p><strong>Nombre:</strong> ${name}</p>
-                <p><strong>Email:</strong> ${email}</p>
-            `;
-            // Inserta el HTML en el contenedor
-            detailsContainer.innerHTML = detailsHTML;
-        }
-    </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="../scripts/detalleContactoLogica.js"></script>
 </body>
+
 </html>
