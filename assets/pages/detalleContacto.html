@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle Contacto</title>
+    <title>Lista de Contactos</title>
 </head>
 <body>
-    <h1>DETALLE CONTACTO</h1>
+
+    <h1>Lista de Contactos</h1>
+
+    <table id="contactTable">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Detalles</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>john.doe@example.com</td>
+                <td><button onclick="showDetails('John Doe', 'john.doe@example.com')">Ver Detalles</button></td>
+            </tr>
+            <!-- Agrega más filas según tus contactos -->
+        </tbody>
+    </table>
+
+    <div id="detailsContainer">
+        <!-- Aquí se mostrarán los detalles del contacto seleccionado -->
+    </div>
+
+    <script>
+        // Función para mostrar detalles del contacto
+        function showDetails(name, email) {
+            const detailsContainer = document.getElementById('detailsContainer');
+            // Construye el HTML de los detalles
+            const detailsHTML = `
+                <h2>Detalles del Contacto</h2>
+                <p><strong>Nombre:</strong> ${name}</p>
+                <p><strong>Email:</strong> ${email}</p>
+            `;
+            // Inserta el HTML en el contenedor
+            detailsContainer.innerHTML = detailsHTML;
+        }
+    </script>
+
 </body>
 </html>
