@@ -1,3 +1,8 @@
+const userEmail = localStorage.getItem('userEmail');
+const userPassword = localStorage.getItem('userPassword');
+
+document.getElementById('userEmail').textContent = userEmail;
+document.getElementById('userPassword').textContent = userPassword;
 
 function agregarContacto() {
     window.location.href = "agregarContacto.html";
@@ -24,20 +29,6 @@ function detalleContacto(nombre, apellido, edad, telefono, correo) {
 
 function favoritos() {
     window.location.href = "favoritos.html";
-}
-
-function perfilUsuario() {
-
-    let datosJSON = localStorage.getItem('datosUsuario');
-
-    if (datosJSON) {
-        let datos = JSON.parse(datosJSON);
-        let cuerpoModal = document.getElementById('cuerpoModal').value;
-        cuerpoModal.innerHTML = `
-            <p><strong>Nombre:</strong> asdfdsf</p>
-            <p><strong>Email:</strong> sadfdsf</p>
-        `;
-    }
 }
 
 function toDoList() {

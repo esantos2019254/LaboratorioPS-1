@@ -1,11 +1,8 @@
 
 function contactos(){
-    let inputEmail = document.getElementById('inputEmail').value;
-    let inputPassword = document.getElementById('inputPassword').value;
-    let datos = {
-        inputEmail: inputEmail,
-        inputPassword: inputPassword
-    };
-    localStorage.setItem('datosUsuario', JSON.stringify(datos));
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    localStorage.setItem('userEmail', email);
+    localStorage.setItem('userPassword', password);
     window.location.href = "./assets/pages/contactos.html";
 }

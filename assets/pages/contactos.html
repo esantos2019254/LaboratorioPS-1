@@ -71,7 +71,8 @@
                 <button class="btn btn-info" onclick="agregarContacto()">Agregar</button>
                 <button class="btn btn-info" onclick="favoritos()">Favoritos</button>
                 <button class="btn btn-info" onclick="toDoList()">Tareas</button>
-                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Pefil del Usuario</button>
+                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    onclick="perfilUsuario()">Pefil del Usuario</button>
 
                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -82,8 +83,10 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
-                            <div class="modal-body" id="cuerpoModal">
-
+                            <div class="modal-body">
+                                <h5 class="card-title">Información del Usuario</h5>
+                                <p class="card-text">Correo: <span id="userEmail"></span></p>
+                                <p class="card-text">Contraseña: <span id="userPassword"></span></p>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
