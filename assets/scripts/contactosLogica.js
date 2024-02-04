@@ -21,3 +21,7 @@ function detalleContacto(nombre, apellido, edad, telefono, correo) {
     // Redirige a la página de visualización
     window.location.href = "detalleContacto.html";
 }
+
+function favoritos(){
+    window.location.href = "favoritos.html";
+}
