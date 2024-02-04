@@ -39,3 +39,7 @@ function perfilUsuario() {
         `;
     }
 }
+
+function toDoList() {
+    window.location.href = "toDoList.html";
+}
