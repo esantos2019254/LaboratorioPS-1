@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/favoritosStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Favoritos</title>
+    
 </head>
+
 <body>
-    <h1>FAVORITOS</h1>
+    <div class="container">
+        <div class="table">
+            <h1>FAVORITOS</h1>
+            <table class="table table-dark table-bordered table-responsive table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col" class="col-sm-1">#</th>
+                        <th scope="col" class="col-sm-3">Nombre</th>
+                        <th scope="col" class="col-sm-3">Apellido</th>
+                        <th scope="col" class="col-sm-3">Teléfono</th>
+                        <th scope="col" class="col-sm-2">Detalles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Elmer Rodrigo</td>
+                        <td>Santos García</td>
+                        <td>3593-0034</td>
+                        <td><button class="btn btn-secondary" onclick="detalleContacto('Elmer Rodrigo','Santos García','18',
+                                '3593-0034','esantos@gmail.com')">Detalle Contacto</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Isabela Sofía</td>
+                        <td>Gutierrez López</td>
+                        <td>4561-2344</td>
+                        <td><button class="btn btn-secondary" onclick="detalleContacto('Isabela Sofía','Gutierrez López','23',
+                            '4561-2344','iguitierrez@gmail.com')">Detalle Contacto</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="botones">
+                <button class="btn btn-info" onclick="agregarContacto()" >Agregar</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="../scripts/contactosLogica.js"></script>
 </body>
+
 </html>
